@@ -380,15 +380,19 @@ async function runAnalyze(){
   res.innerHTML=`<div class="ok"><div class="spinner"></div> Gemini กำลังอ่านสแตทจากภาพ...</div>`;
 
   try{
-    // ส่ง base64 ไป Apps Script (ตัด "data:image/...;base64," ออก)
+    // CORS workaround: ส่งผ่าน GET ?body=... แทน POST
+    async function gasGet(payload) {
+      const encoded = encodeURIComponent(JSON.stringify(payload));
+      const r = await fetch(url + '?body=' + encoded);
+      return r.json();
+    }
+
     const b64s=imgs.map(d=>d.split(',')[1]);
-    const r1=await fetch(url,{method:'POST',body:JSON.stringify({action:'analyze',images:b64s})});
-    const d1=await r1.json();
+    const d1=await gasGet({action:'analyze',images:b64s});
     if(!d1.ok) throw new Error(d1.error||'Gemini analyze ล้มเหลว');
 
     res.innerHTML=`<div class="ok"><div class="spinner"></div> บันทึกลง Google Sheets...</div>`;
-    const r2=await fetch(url,{method:'POST',body:JSON.stringify({action:'save',name,charClass,stats:d1.stats})});
-    const d2=await r2.json();
+    const d2=await gasGet({action:'save',name,charClass,stats:d1.stats});
     if(!d2.ok) throw new Error(d2.error||'บันทึกไม่สำเร็จ');
 
     res.innerHTML=`
