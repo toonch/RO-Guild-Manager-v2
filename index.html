@@ -17,8 +17,6 @@
   --r:12px;--rs:8px;
 }
 body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
-
-/* NAV */
 .nav{background:var(--bg2);border-bottom:1px solid var(--border);height:58px;padding:0 24px;display:flex;align-items:center;position:sticky;top:0;z-index:50}
 .brand{font-family:'Cinzel',serif;font-size:17px;color:var(--blue-l);display:flex;align-items:center;gap:8px}
 .brand em{color:var(--amber);font-style:normal}
@@ -26,93 +24,65 @@ body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--text);min
 .tab{padding:7px 16px;border-radius:var(--rs);border:none;cursor:pointer;font-size:13px;font-weight:600;font-family:'Sarabun',sans-serif;transition:all .18s;background:transparent;color:var(--muted)}
 .tab.active{background:rgba(59,130,246,.15);color:var(--blue-l);border:1px solid rgba(59,130,246,.3)}
 .tab:hover:not(.active){background:rgba(255,255,255,.05);color:#cbd5e1}
-
-/* PAGES */
 .page{display:none;padding:28px 24px 80px;max-width:1100px;margin:0 auto}
 .page.active{display:block}
-
-/* HERO */
 .hero{text-align:center;padding:32px 0 24px}
 .hero h1{font-family:'Cinzel',serif;font-size:26px;margin-bottom:8px;background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero p{color:var(--muted);font-size:14px}
-
-/* SETUP */
-.setup{background:#050d1a;border:1px solid #1e3a5f;border-radius:var(--r);padding:16px 20px;margin-bottom:20px;font-size:13px;color:#93c5fd;line-height:1.9}
+.setup{background:#050d1a;border:1px solid #1e3a5f;border-radius:var(--r);padding:16px 20px;margin-bottom:16px;font-size:13px;color:#93c5fd;line-height:1.9}
 .setup strong{color:#60a5fa;font-weight:600}
-.setup-row{display:flex;gap:8px;margin-top:10px}
+.setup-row{display:flex;gap:8px;margin-top:8px}
 .setup-row input{flex:1;background:#0a0e1a;border:1px solid #1e3a5f;border-radius:var(--rs);padding:8px 14px;color:var(--text);font-size:13px;font-family:monospace;outline:none}
 .setup-row input:focus{border-color:var(--blue)}
-.btn-sm{padding:8px 16px;border-radius:var(--rs);border:1px solid #1e3a5f;background:rgba(30,58,95,.5);color:#60a5fa;cursor:pointer;font-size:13px;font-weight:600;font-family:'Sarabun',sans-serif;white-space:nowrap;transition:all .15s}
+.btn-sm{padding:8px 16px;border-radius:var(--rs);border:1px solid #1e3a5f;background:rgba(30,58,95,.5);color:#60a5fa;cursor:pointer;font-size:13px;font-weight:600;font-family:'Sarabun',sans-serif;white-space:nowrap}
 .btn-sm:hover{background:rgba(30,58,95,.8)}
-
-/* CARD */
 .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px}
 .sec{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:14px}
-
-/* FORM */
 .fg2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
 .fg{display:flex;flex-direction:column;gap:6px}
 .fg label{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.6px}
 .fg input,.fg select{background:var(--bg);border:1px solid var(--border2);border-radius:var(--rs);padding:10px 12px;color:var(--text);font-size:14px;font-family:'Sarabun',sans-serif;outline:none;transition:border .2s}
 .fg input:focus,.fg select:focus{border-color:var(--blue)}
 .fg select option{background:#111827}
-
-/* DROP ZONE */
 .dz{border:2px dashed var(--border2);border-radius:14px;padding:40px 20px;text-align:center;cursor:pointer;transition:all .2s;margin-bottom:18px;background:var(--bg)}
 .dz:hover,.dz.over{border-color:var(--blue);background:rgba(59,130,246,.04)}
 .dz .di{font-size:42px;margin-bottom:12px}
 .dz p{color:var(--muted);font-size:14px;line-height:1.9}
 .dz strong{color:var(--blue-l)}
-
-/* PREVIEW */
 .pg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
 .pv{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:var(--bg);border:1px solid var(--border2)}
 .pv img{width:100%;height:100%;object-fit:cover;display:block}
 .pv .pl{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font-size:11px;padding:22px 8px 8px;text-align:center}
 .pv .pr{position:absolute;top:7px;right:7px;background:rgba(239,68,68,.85);color:#fff;border:none;width:24px;height:24px;border-radius:50%;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center}
-
-/* BUTTONS */
 .btn{width:100%;padding:14px;border-radius:var(--r);border:none;cursor:pointer;font-size:15px;font-weight:700;font-family:'Sarabun',sans-serif;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s}
 .btn:hover:not(:disabled){opacity:.9;transform:translateY(-1px);box-shadow:0 8px 24px rgba(59,130,246,.25)}
 .btn:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
 .btn-out{background:transparent;color:var(--blue-l);border:1px solid rgba(59,130,246,.4);border-radius:var(--rs);padding:7px 14px;cursor:pointer;font-size:13px;font-weight:600;font-family:'Sarabun',sans-serif;transition:all .15s}
 .btn-out:hover{background:rgba(59,130,246,.1)}
-
-/* FEEDBACK */
 .spinner{width:20px;height:20px;border:2px solid var(--border2);border-top-color:var(--blue);border-radius:50%;animation:spin .7s linear infinite;display:inline-block;flex-shrink:0}
 .spinner-lg{width:40px;height:40px;border-width:3px;margin:0 auto 14px}
 @keyframes spin{to{transform:rotate(360deg)}}
 .ok{background:#052e16;border:1px solid #166534;border-radius:var(--rs);padding:13px 18px;color:#86efac;font-size:14px;display:flex;align-items:center;gap:10px;margin-top:14px}
 .err{background:#1a0000;border:1px solid #7f1d1d;border-radius:var(--rs);padding:13px 18px;color:var(--red);font-size:14px;margin-top:14px;line-height:1.7}
-
-/* STAT PREVIEW */
 .stat-box{background:var(--bg);border:1px solid var(--border2);border-radius:var(--r);padding:20px;margin-top:14px}
 .stat-box h4{color:var(--blue-l);font-size:14px;margin-bottom:14px}
 .sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
 .sc{background:var(--card);border-radius:var(--rs);padding:10px 12px;border:1px solid var(--border)}
 .sc .k{font-size:11px;color:var(--muted);margin-bottom:3px}
 .sc .v{font-size:15px;font-weight:700}
-
-/* ADMIN */
 .login-wrap{max-width:400px;margin:80px auto}
 .login-wrap h2{font-family:'Cinzel',serif;font-size:22px;text-align:center;margin-bottom:8px;color:var(--blue-l)}
 .login-wrap p{text-align:center;color:var(--muted);font-size:13px;margin-bottom:24px}
-
-/* METRICS */
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
 .mc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px 20px}
 .mc .ml{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px}
 .mc .mv{font-size:28px;font-weight:800}
 .mc .ms{font-size:12px;color:var(--muted);margin-top:4px}
 .cb{color:var(--blue-l)}.cg{color:var(--green)}.ca{color:var(--amber)}.cp{color:var(--purple)}
-
-/* CHARTS */
 .charts{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
 .cc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px}
 .cc h3{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.7px;margin-bottom:14px}
 .ch{position:relative;height:230px}
-
-/* TABLE */
 .tp{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
 .th2{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .th2 h3{font-size:14px;font-weight:600;color:#94a3b8}
@@ -131,21 +101,13 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .dbtn{background:transparent;border:1px solid rgba(59,130,246,.3);color:var(--blue-l);border-radius:6px;padding:3px 9px;cursor:pointer;font-size:11px;font-family:'Sarabun',sans-serif;transition:all .15s}
 .dbtn:hover{background:rgba(59,130,246,.1)}
 .empty{padding:60px 20px;text-align:center;color:var(--hint)}
-
-/* MODAL */
 .mb{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:200;padding:20px}
 .modal{background:var(--bg2);border:1px solid var(--border2);border-radius:16px;padding:28px;width:100%;max-width:640px;max-height:85vh;overflow-y:auto}
 .modal h3{font-size:18px;font-weight:700;color:var(--blue-l);margin-bottom:4px}
 .msub{color:var(--muted);font-size:13px;margin-bottom:18px}
 .mc3{float:right;background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:4px 12px;cursor:pointer;font-family:'Sarabun',sans-serif}
 .msec{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.7px;margin:14px 0 8px;border-bottom:1px solid var(--border);padding-bottom:5px}
-
-@media(max-width:700px){
-  .fg2{grid-template-columns:1fr}
-  .metrics{grid-template-columns:1fr 1fr}
-  .charts{grid-template-columns:1fr}
-  .nav,.page{padding-left:14px;padding-right:14px}
-}
+@media(max-width:700px){.fg2{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.charts{grid-template-columns:1fr}.nav,.page{padding-left:14px;padding-right:14px}}
 </style>
 </head>
 <body>
@@ -158,19 +120,25 @@ tr:hover td{background:rgba(255,255,255,.02)}
   </div>
 </nav>
 
-<!-- ══════════ UPLOAD ══════════ -->
 <div id="page-upload" class="page active">
   <div class="hero">
     <h1>Upload สแตทตัวละคร</h1>
     <p>ถ่ายภาพหน้าสแตทจากเกม — Gemini AI จะอ่านค่าให้อัตโนมัติ</p>
   </div>
 
-  <div class="setup" id="setupBox">
-    ⚙️ <strong>ตั้งค่าครั้งแรก:</strong> ใส่ URL ของ Google Apps Script
-    (script.google.com → Deploy → Web App → Copy URL)
+  <div class="setup" id="boxGemini">
+    ⚙️ <strong>ตั้งค่า Gemini API Key</strong> — ขอฟรีได้ที่ aistudio.google.com → Get API Key
+    <div class="setup-row">
+      <input type="password" id="geminiKey" placeholder="AIzaSy..."/>
+      <button class="btn-sm" onclick="saveGeminiKey()">💾 บันทึก</button>
+    </div>
+  </div>
+
+  <div class="setup" id="boxScript">
+    ⚙️ <strong>ตั้งค่า Apps Script URL</strong> — script.google.com → Deploy → Web App → Copy URL
     <div class="setup-row">
       <input type="text" id="scriptUrl" placeholder="https://script.google.com/macros/s/.../exec"/>
-      <button class="btn-sm" onclick="saveUrl()">💾 บันทึก</button>
+      <button class="btn-sm" onclick="saveScriptUrl()">💾 บันทึก</button>
     </div>
   </div>
 
@@ -185,36 +153,16 @@ tr:hover td{background:rgba(255,255,255,.02)}
         <label>อาชีพ *</label>
         <select id="charClass" onchange="chk()">
           <option value="">— เลือกอาชีพ —</option>
-          <optgroup label="⚔️ Swordsman">
-            <option>Lord Knight</option><option>Knight</option>
-            <option>Paladin</option><option>Crusader</option>
-          </optgroup>
-          <optgroup label="🔮 Mage">
-            <option>High Wizard</option><option>Wizard</option><option>Professor / Sage</option>
-          </optgroup>
-          <optgroup label="🏹 Archer">
-            <option>Sniper</option><option>Hunter</option>
-            <option>Clown / Gypsy</option><option>Bard / Dancer</option>
-          </optgroup>
-          <optgroup label="✨ Acolyte">
-            <option>High Priest</option><option>Priest</option>
-            <option>Champion</option><option>Monk</option>
-          </optgroup>
-          <optgroup label="⚒️ Merchant">
-            <option>Whitesmith</option><option>Blacksmith</option>
-            <option>Creator / Alchemist</option>
-          </optgroup>
-          <optgroup label="🗡️ Thief">
-            <option>Assassin Cross</option><option>Assassin</option>
-            <option>Stalker / Rogue</option>
-          </optgroup>
-          <optgroup label="🌀 Special">
-            <option>Ninja</option><option>Gunslinger</option><option>อื่นๆ</option>
-          </optgroup>
+          <optgroup label="⚔️ Swordsman"><option>Lord Knight</option><option>Knight</option><option>Paladin</option><option>Crusader</option></optgroup>
+          <optgroup label="🔮 Mage"><option>High Wizard</option><option>Wizard</option><option>Professor / Sage</option></optgroup>
+          <optgroup label="🏹 Archer"><option>Sniper</option><option>Hunter</option><option>Clown / Gypsy</option><option>Bard / Dancer</option></optgroup>
+          <optgroup label="✨ Acolyte"><option>High Priest</option><option>Priest</option><option>Champion</option><option>Monk</option></optgroup>
+          <optgroup label="⚒️ Merchant"><option>Whitesmith</option><option>Blacksmith</option><option>Creator / Alchemist</option></optgroup>
+          <optgroup label="🗡️ Thief"><option>Assassin Cross</option><option>Assassin</option><option>Stalker / Rogue</option></optgroup>
+          <optgroup label="🌀 Special"><option>Ninja</option><option>Gunslinger</option><option>อื่นๆ</option></optgroup>
         </select>
       </div>
     </div>
-
     <div class="sec">ภาพหน้าสแตท (1–3 รูป)</div>
     <div class="dz" id="dz" onclick="document.getElementById('fi').click()">
       <div class="di">🖼️</div>
@@ -222,19 +170,13 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <p>Screenshot หน้า General / Attribute / Special จากเกม</p>
     </div>
     <input type="file" id="fi" accept="image/*" multiple style="display:none" onchange="addFiles(this.files)"/>
-
     <div class="pg" id="pg" style="display:none"></div>
-
-    <button class="btn" id="sub" onclick="runAnalyze()" disabled>
-      ✨ ให้ Gemini AI อ่านสแตทและบันทึก
-    </button>
+    <button class="btn" id="sub" onclick="runAnalyze()" disabled>✨ ให้ Gemini AI อ่านสแตทและบันทึก</button>
     <div id="res"></div>
   </div>
 </div>
 
-<!-- ══════════ ADMIN ══════════ -->
 <div id="page-admin" class="page">
-
   <div id="loginGate" class="login-wrap">
     <h2>🔐 Admin Access</h2>
     <p>สำหรับผู้บริหารกิลด์เท่านั้น</p>
@@ -244,9 +186,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
         <input type="password" id="adminPass" placeholder="ใส่ password..." onkeydown="if(event.key==='Enter')doLogin()"/>
       </div>
       <button class="btn" onclick="doLogin()">เข้าสู่ระบบ</button>
-      <div id="loginErr" style="color:var(--red);font-size:13px;margin-top:10px;display:none">
-        ❌ Password ไม่ถูกต้อง หรือยังไม่ได้ตั้งค่า Script URL
-      </div>
+      <div id="loginErr" style="color:var(--red);font-size:13px;margin-top:10px;display:none">❌ Password ไม่ถูกต้อง</div>
     </div>
   </div>
 
@@ -254,7 +194,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px">
       <div>
         <h2 style="font-family:'Cinzel',serif;font-size:22px">🛡️ Guild Dashboard</h2>
-        <p style="color:var(--muted);font-size:13px;margin-top:4px">ข้อมูลจาก Google Sheets แบบ real-time</p>
+        <p style="color:var(--muted);font-size:13px;margin-top:4px">ข้อมูลจาก Google Sheets</p>
       </div>
       <div style="display:flex;gap:10px;align-items:center">
         <span id="mBadge" style="background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);color:var(--blue-l);padding:6px 16px;border-radius:20px;font-size:13px;font-weight:700">0 สมาชิก</span>
@@ -262,11 +202,9 @@ tr:hover td{background:rgba(255,255,255,.02)}
         <button class="btn-out" onclick="logout()" style="border-color:rgba(239,68,68,.3);color:var(--red)">ออก</button>
       </div>
     </div>
-
     <div id="dashLoad" style="display:none;text-align:center;padding:40px;color:var(--muted)">
       <div class="spinner spinner-lg"></div><p>กำลังโหลดข้อมูล...</p>
     </div>
-
     <div id="dashContent" style="display:none">
       <div class="metrics">
         <div class="mc"><div class="ml">สมาชิก</div><div class="mv cb" id="dN">0</div><div class="ms">คน</div></div>
@@ -274,24 +212,18 @@ tr:hover td{background:rgba(255,255,255,.02)}
         <div class="mc"><div class="ml">P.ATK สูงสุด</div><div class="mv ca" id="dAtk">—</div><div class="ms">ของกิลด์</div></div>
         <div class="mc"><div class="ml">อาชีพหลัก</div><div class="mv cp" id="dCls" style="font-size:14px;margin-top:8px">—</div><div class="ms">มากสุด</div></div>
       </div>
-
       <div class="charts">
         <div class="cc"><h3>สัดส่วนอาชีพ</h3><div class="ch"><canvas id="clsChart" role="img" aria-label="สัดส่วนอาชีพ">สัดส่วนอาชีพ</canvas></div></div>
         <div class="cc"><h3>HP ranking top 10</h3><div class="ch"><canvas id="hpChart" role="img" aria-label="HP ranking">HP ranking</canvas></div></div>
       </div>
-
       <div class="tp">
-        <div class="th2">
-          <h3>รายชื่อสมาชิก</h3>
-          <input class="srch" type="text" placeholder="🔍 ค้นหา..." oninput="filterTbl(this.value)"/>
-        </div>
+        <div class="th2"><h3>รายชื่อสมาชิก</h3><input class="srch" type="text" placeholder="🔍 ค้นหา..." oninput="filterTbl(this.value)"/></div>
         <div class="tw"><div id="tblArea"></div></div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- MODAL -->
 <div id="modal" class="mb" style="display:none" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <button class="mc3" onclick="closeModal()">✕ ปิด</button>
@@ -308,18 +240,29 @@ let imgs=[], clsChart, hpChart, allMembers=[], adminPass='';
 const LBLS=['ภาพที่ 1 — General','ภาพที่ 2 — Attribute','ภาพที่ 3 — Special'];
 
 window.addEventListener('load',()=>{
-  const url=localStorage.getItem('ro_script_url');
-  if(url){document.getElementById('scriptUrl').value=url;document.getElementById('setupBox').style.display='none';}
+  const gk=localStorage.getItem('ro_gemini_key');
+  const su=localStorage.getItem('ro_script_url');
+  if(gk){document.getElementById('geminiKey').value='***saved***';document.getElementById('boxGemini').style.display='none';}
+  if(su){document.getElementById('scriptUrl').value=su;document.getElementById('boxScript').style.display='none';}
   setupDrop(); chk();
 });
 
-function getUrl(){return localStorage.getItem('ro_script_url')||'';}
-function saveUrl(){
+function getGeminiKey(){return localStorage.getItem('ro_gemini_key')||'';}
+function getScriptUrl(){return localStorage.getItem('ro_script_url')||'';}
+
+function saveGeminiKey(){
+  const v=document.getElementById('geminiKey').value.trim();
+  if(!v||v==='***saved***'){alert('กรุณาใส่ API Key');return;}
+  localStorage.setItem('ro_gemini_key',v);
+  document.getElementById('boxGemini').style.display='none';
+  chk(); alert('✅ บันทึก Gemini Key แล้ว!');
+}
+function saveScriptUrl(){
   const v=document.getElementById('scriptUrl').value.trim();
   if(!v.startsWith('https://script.google.com')){alert('URL ไม่ถูกต้อง');return;}
   localStorage.setItem('ro_script_url',v);
-  document.getElementById('setupBox').style.display='none';
-  chk(); alert('✅ บันทึก URL แล้ว!');
+  document.getElementById('boxScript').style.display='none';
+  chk(); alert('✅ บันทึก Script URL แล้ว!');
 }
 
 function showPage(id,btn){
@@ -330,7 +273,6 @@ function showPage(id,btn){
   if(id==='admin'&&adminPass) loadDash();
 }
 
-// ── DROP ──────────────────────────────────────────────────
 function setupDrop(){
   const dz=document.getElementById('dz');
   dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('over');});
@@ -349,28 +291,20 @@ function renderPrev(){
   const g=document.getElementById('pg');
   if(!imgs.length){g.style.display='none';chk();return;}
   g.style.display='grid';
-  g.innerHTML=imgs.map((d,i)=>`
-    <div class="pv">
-      <img src="${d}" alt="stat"/>
-      <div class="pl">${LBLS[i]||'ภาพที่'+(i+1)}</div>
-      <button class="pr" onclick="rmImg(${i})">✕</button>
-    </div>`).join('');
+  g.innerHTML=imgs.map((d,i)=>`<div class="pv"><img src="${d}" alt="stat"/><div class="pl">${LBLS[i]||'ภาพที่'+(i+1)}</div><button class="pr" onclick="rmImg(${i})">✕</button></div>`).join('');
   chk();
 }
 function rmImg(i){imgs.splice(i,1);renderPrev();}
 function chk(){
-  document.getElementById('sub').disabled=
-    !(document.getElementById('charName').value.trim()&&
-      document.getElementById('charClass').value&&
-      imgs.length&&getUrl());
+  document.getElementById('sub').disabled=!(document.getElementById('charName').value.trim()&&document.getElementById('charClass').value&&imgs.length&&getGeminiKey()&&getScriptUrl());
 }
 document.getElementById('charName').addEventListener('input',chk);
 document.getElementById('charClass').addEventListener('change',chk);
 
-// ── ANALYZE ───────────────────────────────────────────────
+// ── ANALYZE: เรียก Gemini โดยตรงจาก browser ──────────────
 async function runAnalyze(){
-  const url=getUrl();
-  if(!url){alert('กรุณาตั้งค่า Script URL ก่อน');return;}
+  const geminiKey=getGeminiKey();
+  const scriptUrl=getScriptUrl();
   const name=document.getElementById('charName').value.trim();
   const charClass=document.getElementById('charClass').value;
   const btn=document.getElementById('sub');
@@ -380,34 +314,38 @@ async function runAnalyze(){
   res.innerHTML=`<div class="ok"><div class="spinner"></div> Gemini กำลังอ่านสแตทจากภาพ...</div>`;
 
   try{
-    // CORS workaround: ส่งผ่าน GET ?body=... แทน POST
-    async function gasGet(payload) {
-      const encoded = encodeURIComponent(JSON.stringify(payload));
-      const r = await fetch(url + '?body=' + encoded);
-      return r.json();
-    }
+    // Step 1: เรียก Gemini API โดยตรงจาก browser (ไม่มี CORS issue)
+    const prompt=`คุณคือผู้เชี่ยวชาญ Ragnarok Origin Classic วิเคราะห์สแตทจากรูปภาพ ตอบกลับเป็น JSON เท่านั้น ห้ามมีข้อความอื่น ห้ามมี markdown
+รูปแบบ: {"hp":0,"sp":0,"p_atk":0,"m_atk":0,"p_def":0,"m_def":0,"refine_p_atk":0,"refine_m_atk":0,"hit":0,"flee":0,"aspd_pct":0,"crit":0,"crit_dmg_pct":0,"p_dmg_bonus_pct":0,"m_dmg_bonus_pct":0,"p_dmg_reduction_pct":0,"m_dmg_reduction_pct":0,"fixed_casting_pct":0,"variable_casting_pct":0,"global_cd_pct":0,"healing_effect_pct":0,"healing_received_pct":0,"max_hp_pct":0,"max_sp_pct":0,"equip_p_atk_pct":0,"equip_m_atk_pct":0,"pve_dmg_bonus":0,"pvp_dmg_bonus":0,"dmg_vs_s_size_pct":0,"dmg_vs_m_size_pct":0,"dmg_vs_l_size_pct":0}
+ถ้าไม่เห็นค่าไหนให้ใส่ 0`;
 
-    const b64s=imgs.map(d=>d.split(',')[1]);
-    const d1=await gasGet({action:'analyze',images:b64s});
-    if(!d1.ok) throw new Error(d1.error||'Gemini analyze ล้มเหลว');
+    const parts=[{text:prompt}];
+    imgs.forEach(d=>parts.push({inline_data:{mime_type:'image/jpeg',data:d.split(',')[1]}}));
 
+    const gr=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiKey}`,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({contents:[{parts}]})
+    });
+    if(!gr.ok){const e=await gr.json();throw new Error('Gemini: '+(e.error?.message||gr.status));}
+    const gd=await gr.json();
+    const text=gd.candidates?.[0]?.content?.parts?.[0]?.text||'{}';
+    const stats=JSON.parse(text.replace(/```json|```/g,'').trim());
+
+    // Step 2: ส่งแค่ text stats ไป Apps Script (ไม่มีรูป — ไม่มีปัญหา size)
     res.innerHTML=`<div class="ok"><div class="spinner"></div> บันทึกลง Google Sheets...</div>`;
-    const d2=await gasGet({action:'save',name,charClass,stats:d1.stats});
-    if(!d2.ok) throw new Error(d2.error||'บันทึกไม่สำเร็จ');
+    const sr=await fetch(`${scriptUrl}?action=save&name=${encodeURIComponent(name)}&class=${encodeURIComponent(charClass)}&stats=${encodeURIComponent(JSON.stringify(stats))}`);
+    const sd=await sr.json();
+    if(!sd.ok) throw new Error('Sheet: '+(sd.error||'บันทึกไม่สำเร็จ'));
 
     res.innerHTML=`
-      <div class="ok">✅ บันทึกสแตทของ <strong>${name}</strong> (${charClass}) เรียบร้อย! ${d2.updated?'(อัปเดต)':'(เพิ่มใหม่)'}</div>
-      <div class="stat-box">
-        <h4>📋 ค่าที่ Gemini อ่านได้</h4>
-        <div class="sg">${buildCells(d1.stats)}</div>
-      </div>`;
-
-    // reset
+      <div class="ok">✅ บันทึกสแตทของ <strong>${name}</strong> (${charClass}) เรียบร้อย! ${sd.updated?'(อัปเดต)':'(เพิ่มใหม่)'}</div>
+      <div class="stat-box"><h4>📋 ค่าที่ Gemini อ่านได้</h4><div class="sg">${buildCells(stats)}</div></div>`;
     document.getElementById('charName').value='';
     document.getElementById('charClass').value='';
     imgs=[]; renderPrev();
   }catch(e){
-    res.innerHTML=`<div class="err">❌ ${e.message}<br><small style="opacity:.7">ตรวจสอบ Script URL และ Gemini API Key ใน Apps Script</small></div>`;
+    res.innerHTML=`<div class="err">❌ ${e.message}<br><small style="opacity:.7">ตรวจสอบ Gemini API Key และ Script URL</small></div>`;
   }
   btn.disabled=false;
 }
@@ -420,7 +358,7 @@ function buildCells(s){
 // ── ADMIN ─────────────────────────────────────────────────
 async function doLogin(){
   const pass=document.getElementById('adminPass').value;
-  const url=getUrl();
+  const url=getScriptUrl();
   document.getElementById('loginErr').style.display='none';
   if(!url){document.getElementById('loginErr').textContent='❌ ยังไม่ได้ตั้งค่า Script URL';document.getElementById('loginErr').style.display='block';return;}
   try{
@@ -437,35 +375,20 @@ async function doLogin(){
     document.getElementById('loginErr').style.display='block';
   }
 }
-function logout(){
-  adminPass='';
-  document.getElementById('loginGate').style.display='block';
-  document.getElementById('dash').style.display='none';
-  document.getElementById('dashContent').style.display='none';
-  document.getElementById('adminPass').value='';
-}
+function logout(){adminPass='';document.getElementById('loginGate').style.display='block';document.getElementById('dash').style.display='none';document.getElementById('dashContent').style.display='none';document.getElementById('adminPass').value='';}
 async function loadDash(){
-  const url=getUrl();
+  const url=getScriptUrl();
   document.getElementById('dashLoad').style.display='block';
   document.getElementById('dashContent').style.display='none';
-  try{
-    const r=await fetch(`${url}?action=members&password=${encodeURIComponent(adminPass)}`);
-    const d=await r.json();
-    processMembers(d.members||[]);
-  }catch(e){alert('โหลดไม่ได้: '+e.message);}
+  try{const r=await fetch(`${url}?action=members&password=${encodeURIComponent(adminPass)}`);const d=await r.json();processMembers(d.members||[]);}
+  catch(e){alert('โหลดไม่ได้: '+e.message);}
   document.getElementById('dashLoad').style.display='none';
   document.getElementById('dashContent').style.display='block';
 }
-
 function processMembers(raw){
-  allMembers=raw.map(r=>({
-    date:r['วันที่']||'',name:r['ชื่อ']||'',cls:r['อาชีพ']||'',
-    hp:+r['HP']||0,sp:+r['SP']||0,p_atk:+r['P.ATK']||0,m_atk:+r['M.ATK']||0,
-    aspd:+r['ASPD%']||0,crit:+r['CRIT']||0,raw:r
-  }));
+  allMembers=raw.map(r=>({date:r['วันที่']||'',name:r['ชื่อ']||'',cls:r['อาชีพ']||'',hp:+r['HP']||0,sp:+r['SP']||0,p_atk:+r['P.ATK']||0,m_atk:+r['M.ATK']||0,aspd:+r['ASPD%']||0,crit:+r['CRIT']||0,raw:r}));
   renderDash();
 }
-
 function renderDash(){
   const n=allMembers.length;
   document.getElementById('mBadge').textContent=n+' สมาชิก';
@@ -481,48 +404,26 @@ function renderDash(){
   renderCharts(cc,[...allMembers].sort((a,b)=>b.hp-a.hp));
   renderTbl(allMembers);
 }
-
 function renderCharts(cc,sorted){
-  if(clsChart)clsChart.destroy();
-  if(hpChart)hpChart.destroy();
+  if(clsChart)clsChart.destroy();if(hpChart)hpChart.destroy();
   const L=Object.keys(cc),D=Object.values(cc);
   if(L.length) clsChart=new Chart(document.getElementById('clsChart'),{type:'doughnut',data:{labels:L,datasets:[{data:D,backgroundColor:COLORS,borderColor:'#111827',borderWidth:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{color:'#94a3b8',font:{size:11},padding:10,boxWidth:12}}}}});
   const t=sorted.slice(0,10);
   if(t.length) hpChart=new Chart(document.getElementById('hpChart'),{type:'bar',data:{labels:t.map(m=>m.name),datasets:[{data:t.map(m=>m.hp),backgroundColor:t.map((_,i)=>COLORS[i%COLORS.length]),borderRadius:6,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b',font:{size:10},maxRotation:30},grid:{color:'rgba(30,45,74,.6)'}},y:{ticks:{color:'#64748b',font:{size:10},callback:v=>(v/1000).toFixed(0)+'k'},grid:{color:'rgba(30,45,74,.6)'}}}}});
 }
-
 function renderTbl(list){
   const a=document.getElementById('tblArea');
-  if(!list.length){a.innerHTML=`<div class="empty"><p style="font-size:48px;opacity:.3;margin-bottom:12px">🗡️</p><p>ยังไม่มีข้อมูลสมาชิก<br>รอลูกกิลด์อัปโหลดสแตท</p></div>`;return;}
+  if(!list.length){a.innerHTML=`<div class="empty"><p style="font-size:48px;opacity:.3;margin-bottom:12px">🗡️</p><p>ยังไม่มีข้อมูลสมาชิก</p></div>`;return;}
   const mx=Math.max(...list.map(m=>m.hp));
-  a.innerHTML=`<table><thead><tr><th>#</th><th>ชื่อ</th><th>อาชีพ</th><th>HP</th><th>P.ATK</th><th>M.ATK</th><th>ASPD</th><th>CRIT</th><th>ระดับพลัง</th><th>อัปเดต</th><th></th></tr></thead>
-  <tbody>${list.map((m,i)=>{
-    const pct=mx?Math.round(m.hp/mx*100):0;
-    const bc=pct>70?'#34d399':pct>40?'#fbbf24':'#f87171';
-    const cc2=CLS_CLR[m.cls]||'#60a5fa';
-    return `<tr><td style="color:var(--hint)">${i+1}</td><td style="font-weight:700">${m.name}</td><td><span class="badge" style="background:${cc2}22;color:${cc2}">${m.cls}</span></td><td style="color:var(--blue-l);font-weight:600">${m.hp.toLocaleString()}</td><td style="color:var(--amber)">${m.p_atk.toLocaleString()}</td><td style="color:var(--purple)">${m.m_atk.toLocaleString()}</td><td>${m.aspd}%</td><td>${m.crit}</td><td><div class="br"><div class="bt"><div class="bf" style="width:${pct}%;background:${bc}"></div></div><span style="font-size:11px;color:${bc};min-width:28px">${pct}%</span></div></td><td style="color:var(--hint);font-size:12px">${m.date}</td><td><button class="dbtn" onclick="openModal(${i})">ดูทั้งหมด</button></td></tr>`;
-  }).join('')}</tbody></table>`;
+  a.innerHTML=`<table><thead><tr><th>#</th><th>ชื่อ</th><th>อาชีพ</th><th>HP</th><th>P.ATK</th><th>M.ATK</th><th>ASPD</th><th>CRIT</th><th>ระดับพลัง</th><th>อัปเดต</th><th></th></tr></thead><tbody>${list.map((m,i)=>{const pct=mx?Math.round(m.hp/mx*100):0;const bc=pct>70?'#34d399':pct>40?'#fbbf24':'#f87171';const cc2=CLS_CLR[m.cls]||'#60a5fa';return `<tr><td style="color:var(--hint)">${i+1}</td><td style="font-weight:700">${m.name}</td><td><span class="badge" style="background:${cc2}22;color:${cc2}">${m.cls}</span></td><td style="color:var(--blue-l);font-weight:600">${m.hp.toLocaleString()}</td><td style="color:var(--amber)">${m.p_atk.toLocaleString()}</td><td style="color:var(--purple)">${m.m_atk.toLocaleString()}</td><td>${m.aspd}%</td><td>${m.crit}</td><td><div class="br"><div class="bt"><div class="bf" style="width:${pct}%;background:${bc}"></div></div><span style="font-size:11px;color:${bc};min-width:28px">${pct}%</span></div></td><td style="color:var(--hint);font-size:12px">${m.date}</td><td><button class="dbtn" onclick="openModal(${i})">ดูทั้งหมด</button></td></tr>`;}).join('')}</tbody></table>`;
 }
-
-function filterTbl(q){
-  const f=q.toLowerCase();
-  renderTbl(f?allMembers.filter(m=>m.name.toLowerCase().includes(f)||m.cls.toLowerCase().includes(f)):allMembers);
-}
-
+function filterTbl(q){const f=q.toLowerCase();renderTbl(f?allMembers.filter(m=>m.name.toLowerCase().includes(f)||m.cls.toLowerCase().includes(f)):allMembers);}
 function openModal(idx){
   const m=allMembers[idx],r=m.raw;
   document.getElementById('mTitle').textContent=m.name;
   document.getElementById('mSub').textContent=m.cls+' | '+m.date;
-  const secs=[
-    ['General',[['HP',r['HP']||0],['SP',r['SP']||0],['P.ATK',r['P.ATK']||0],['M.ATK',r['M.ATK']||0],['P.DEF',r['P.DEF']||0],['M.DEF',r['M.DEF']||0],['Refine P.ATK',r['Refine P.ATK']||0],['HIT',r['HIT']||0],['FLEE',r['FLEE']||0]]],
-    ['Attribute สูง',[['ASPD%',r['ASPD%']||0],['CRIT',r['CRIT']||0],['CRIT DMG%',r['CRIT DMG%']||0],['Fixed Cast%',r['Fixed Cast%']||0],['Variable Cast%',r['Variable Cast%']||0],['Global CD%',r['Global CD%']||0],['Healing%',r['Healing Effect%']||0],['Heal Recv%',r['Healing Received%']||0]]],
-    ['DMG',[['P.DMG Bonus%',r['P.DMG Bonus%']||0],['M.DMG Bonus%',r['M.DMG Bonus%']||0],['P.Reduction%',r['P.DMG Reduction%']||0],['M.Reduction%',r['M.DMG Reduction%']||0],['PVE Bonus',r['PVE DMG Bonus']||0],['PVP Bonus',r['PVP DMG Bonus']||0],['Max HP%',r['Max HP%']||0],['Max SP%',r['Max SP%']||0]]],
-    ['vs Monster',[['vs S Size%',r['DMG vs S Size%']||0],['vs M Size%',r['DMG vs M Size%']||0],['vs L Size%',r['DMG vs L Size%']||0]]],
-  ];
-  document.getElementById('mBody').innerHTML=secs.map(([s,rows])=>`
-    <div class="msec">${s}</div>
-    <div class="sg">${rows.map(([k,v])=>`<div class="sc"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('')}</div>
-  `).join('');
+  const secs=[['General',[['HP',r['HP']||0],['SP',r['SP']||0],['P.ATK',r['P.ATK']||0],['M.ATK',r['M.ATK']||0],['P.DEF',r['P.DEF']||0],['M.DEF',r['M.DEF']||0],['Refine P.ATK',r['Refine P.ATK']||0],['HIT',r['HIT']||0],['FLEE',r['FLEE']||0]]],['Attribute สูง',[['ASPD%',r['ASPD%']||0],['CRIT',r['CRIT']||0],['CRIT DMG%',r['CRIT DMG%']||0],['Fixed Cast%',r['Fixed Cast%']||0],['Variable Cast%',r['Variable Cast%']||0],['Global CD%',r['Global CD%']||0],['Healing%',r['Healing Effect%']||0],['Heal Recv%',r['Healing Received%']||0]]],['DMG',[['P.DMG Bonus%',r['P.DMG Bonus%']||0],['M.DMG Bonus%',r['M.DMG Bonus%']||0],['P.Reduction%',r['P.DMG Reduction%']||0],['M.Reduction%',r['M.DMG Reduction%']||0],['PVE Bonus',r['PVE DMG Bonus']||0],['PVP Bonus',r['PVP DMG Bonus']||0],['Max HP%',r['Max HP%']||0],['Max SP%',r['Max SP%']||0]]],['vs Monster',[['vs S Size%',r['DMG vs S Size%']||0],['vs M Size%',r['DMG vs M Size%']||0],['vs L Size%',r['DMG vs L Size%']||0]]]];
+  document.getElementById('mBody').innerHTML=secs.map(([s,rows])=>`<div class="msec">${s}</div><div class="sg">${rows.map(([k,v])=>`<div class="sc"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('')}</div>`).join('');
   document.getElementById('modal').style.display='flex';
 }
 function closeModal(){document.getElementById('modal').style.display='none';}
